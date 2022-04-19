@@ -42,19 +42,20 @@ Clone the repo, open the folder and run the source file
 | Kewword      | Arguments                                     | Explanation                             |
 |--------------|-----------------------------------------------|-----------------------------------------|
 | help         | none                                          | print all commands and their usage      |
-| add          | add [adventure] [mission] [-r num_of_days]    |add mission to the adventure             |
+| add          | add [adventure] [mission] [-r num_of_days]    | add mission to the adventure            |
 | search       | search [kewword]                              | returns all missions with given kewword |
 | init         | init [adventure]                              | init an adventure                       |
-| archive      | atchive [adventure]                           | archive an adventure                       |
+| archive      | atchive [adventure]                           | archive an adventure                    |
 | check        | check [adventure] [mission\|all]              | check mission in the adventure          |
 | uncheck      | uncheck [adventure] [mission\|all]            | uncheck mission in the adventure        |
 | delete       | delete [adventure] [mission]                  | delete mission or adventure             |
 | rename       | rename [adventure new_name] [-n mission name] | rename mission or adventure             |
-| list         | list [adventure] [check\|uncheck\| ]          | print an aventure or all adventures     |
+| list         | list [adventure\|archive] [check\|uncheck\| ] | print an aventure or all adventures     |
 
 ## Structure
 - /commands contains all possible commands as objects. Every command has to have name, description, and usage.
 - /data contains projects as json files. Name of the file is the name of the project.
+- /archive contains projects that are archived
 - /functions contains helper functions.
 - /settings contains theme script and config file. Config has paths to data and commands.
 - reload.txt is a text file that has a date of latest reload. The date updates once a day during the first run.
