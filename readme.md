@@ -29,7 +29,7 @@ Clone the repo, open the folder and run the source file
 
     $ git clone https://github.com/DZykov/adventure-cli-todo.git
     $ cd adventure-cli-todo
-    $ python3 adventure.py
+    $ python3 ./adventure.py
 
 
 ## Features
