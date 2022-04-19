@@ -1,5 +1,5 @@
 # Adventure: Simple todo-cli
-    Simple todo-cli made with python. Support multiples projects, colours, and repeated tasks. 
+-    Simple todo-cli made with python. Supports multiples projects, colours, and repeated tasks. 
 
 ## Index
    - [Workflow](#Workflow "Goto Workflow")
@@ -7,6 +7,7 @@
    - [Installation](#Installation "Goto Installation")
    - [Features](#Features "Goto Features")
    - [Commands](#Controls "Goto Commands")
+   - [Structure](#Controls "Goto Structure")
    - [To-Do and Issues](#To-Do-and-Issues "Goto ToDo-and-Issues")
 
 ## Workflow
@@ -50,8 +51,14 @@ Clone the repo, open the folder and run the source file
 | rename       |  rename [adventure new_name] [-n mission name] | rename mission or adventure
 | list         |  list [adventure or ""] | print an aventure or all adventures
 
+## Structure
+- /commands contains all possible commands as objects. Every command has to have name, description, and usage.
+- /data contains projects as json files. Name of the file is the name of the project.
+- /functions contains helper functions.
+- /settings contains theme script and config file. Config has paths to data and commands.
+
 ## Contributing
-   This assignment was originally created for the purposes of a Computer Science Communications course, we tried our very        best to make sure it reaches professional standards but there is a possibility that it misses the mark.
+   Feel free to use or add ;).
 
 ## To-Do and Issues
 - [ ] Add daemon
