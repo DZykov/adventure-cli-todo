@@ -45,7 +45,7 @@ Clone the repo, open the folder and run the source file
 | add          | add [adventure] [mission] [-r num_of_days]    | add mission to the adventure            |
 | search       | search [kewword]                              | returns all missions with given kewword |
 | init         | init [adventure]                              | init an adventure                       |
-| archive      | atchive [adventure]                           | archive an adventure                    |
+| archive      | archive [adventure]                           | archive an adventure                    |
 | check        | check [adventure] [mission\|all]              | check mission in the adventure          |
 | uncheck      | uncheck [adventure] [mission\|all]            | uncheck mission in the adventure        |
 | delete       | delete [adventure] [mission]                  | delete mission or adventure             |
