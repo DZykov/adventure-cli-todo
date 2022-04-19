@@ -1,19 +1,19 @@
 from commands import *
-from functions import reload_missions
+from functions import *
 import sys
 import datetime
 
 if __name__ == '__main__':
     try:
         diff = 0
-        with open('reload.txt', 'w+', encoding='utf-8') as f:
+        with open('reload.txt', 'r+', encoding='utf-8') as f:
             date_str = f.read()
             if len(date_str) == 0:
                 date_str = datetime.datetime.now().strftime("%d/%m/%Y")
                 f.write(date_str)
             date1 = datetime.datetime.strptime(date_str, "%d/%m/%Y")
-            date2 = datetime.datetime.now()
-            date3 = date2 - date1
+            date2 = datetime.datetime.now().strftime("%d/%m/%Y")
+            date3 = date1 - datetime.datetime.strptime(date2, "%d/%m/%Y")
             diff = abs(date3.days)
         
         if diff > 0:

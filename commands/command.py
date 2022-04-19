@@ -27,7 +27,8 @@ class Command:
             with open(data+project+file_ext, 'w', encoding='utf-8') as project_file:
                 json.dump(
                     jdata,
-                    project_file
+                    project_file,
+                    indent=4,
                 )
             return 1
         except:

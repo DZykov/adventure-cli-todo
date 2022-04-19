@@ -1,1 +1,26 @@
-[{"name": "task 1", "checked": true, "repeat": 5, "checked_date": "19/04/2022"}, {"name": "task 2", "checked": false, "repeat": 1, "checked_date": ""}, {"name": "task 3", "checked": false, "repeat": 0, "checked_date": ""}, {"name": "event 1", "checked": true, "repeat": 0, "checked_date": "19/04/2022"}]
+[
+    {
+        "name": "task 1",
+        "checked": true,
+        "repeat": 5,
+        "checked_date": "19/04/2022"
+    },
+    {
+        "name": "task 2",
+        "checked": false,
+        "repeat": 1,
+        "checked_date": ""
+    },
+    {
+        "name": "task 3",
+        "checked": false,
+        "repeat": 0,
+        "checked_date": ""
+    },
+    {
+        "name": "event 1!",
+        "checked": true,
+        "repeat": 0,
+        "checked_date": "19/04/2022"
+    }
+]

@@ -21,6 +21,7 @@ class Mission:
         self.checked_date = datetime.datetime.now().strftime("%d/%m/%Y")
 
     def uncheck(self):
+        print(self.name)
         self.checked = False
         self.checked_date = ''
     

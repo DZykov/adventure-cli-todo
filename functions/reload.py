@@ -22,7 +22,8 @@ def write_json(f, adv):
     with open(f, 'w', encoding='utf-8') as project_file:
         json.dump(
             adv,
-            project_file
+            project_file,
+            indent=4,
         )
 
 def reload_missions():
@@ -35,7 +36,5 @@ def reload_missions():
                 mis_obj.reload()
                 index = adv.index(mis)
                 adv.remove(mis)
-                write_json(data+filename, adv)
-                adv = load_json(data+filename)
                 adv.insert(index, mis_obj.get_mission())
                 write_json(data+filename, adv)
