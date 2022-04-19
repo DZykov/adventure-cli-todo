@@ -45,12 +45,12 @@ Clone the repo, open the folder and run the source file
 | add          | add [adventure] [mission] [-r num_of_days]    |add mission to the adventure             |
 | search       | search [kewword]                              | returns all missions with given kewword |
 | init         | init [adventure]                              | init an adventure                       |
-| archive         | atchive [adventure]                        | archive an adventure                       |
-| check        | check [adventure] [mission|all]               | check mission in the adventure          |
-| uncheck      | uncheck [adventure] [mission|all]             | uncheck mission in the adventure        |
+| archive      | atchive [adventure]                           | archive an adventure                       |
+| check        | check [adventure] [mission\|all]              | check mission in the adventure          |
+| uncheck      | uncheck [adventure] [mission\|all]            | uncheck mission in the adventure        |
 | delete       | delete [adventure] [mission]                  | delete mission or adventure             |
 | rename       | rename [adventure new_name] [-n mission name] | rename mission or adventure             |
-| list         | list [adventure+""|check|uncheck or ""]       | print an aventure or all adventures     |
+| list         | list [adventure] [check\|uncheck\| ]          | print an aventure or all adventures     |
 
 ## Structure
 - /commands contains all possible commands as objects. Every command has to have name, description, and usage.
