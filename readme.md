@@ -6,8 +6,8 @@
    - [Demo](#Demo "Goto Demo")
    - [Installation](#Installation "Goto Installation")
    - [Features](#Features "Goto Features")
-   - [Commands](#Controls "Goto Commands")
-   - [Structure](#Controls "Goto Structure")
+   - [Commands](#Commands "Goto Commands")
+   - [Structure](#Structure "Goto Structure")
    - [To-Do and Issues](#To-Do-and-Issues "Goto ToDo-and-Issues")
 
 ## Workflow
