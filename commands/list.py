@@ -8,7 +8,7 @@ class List(Command):
     def __init__(self):
         name = "list"
         description = "print an adventure or all adventures"
-        usage = "list [adventure|all]"
+        usage = "list [adventure|""]"
         super().__init__(name, description, usage)
 
     def print_all(self):

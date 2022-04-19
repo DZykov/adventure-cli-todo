@@ -9,7 +9,7 @@ class Check(Command):
 
     def __init__(self):
         name = "check"
-        description = "uncheck mission in the adventure"
+        description = "check mission in the adventure"
         usage = "check [adventure] [mission]"
         super().__init__(name, description, usage)
     

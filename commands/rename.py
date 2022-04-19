@@ -11,7 +11,7 @@ class Rename(Command):
     def __init__(self):
         name = "rename"
         description = "rename mission or adventure"
-        usage = "rename [adventure |+name] [mission name]"
+        usage = "rename [adventure |+name] [-n mission name]"
         super().__init__(name, description, usage)
     
     def rename_mission(self, adventure, mission, name):
