@@ -7,6 +7,7 @@ from .check import Check
 from .uncheck import Uncheck
 from .delete import Delete
 from .rename import Rename
+from .archive import Archive
 
 hlp = Help()
 ls = List()
@@ -17,3 +18,4 @@ check = Check()
 delete = Delete()
 uncheck = Uncheck()
 rename = Rename()
+archive = Archive()

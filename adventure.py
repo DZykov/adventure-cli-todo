@@ -24,9 +24,18 @@ if __name__ == '__main__':
         args = sys.argv  
         if(args[1] == 'add'):
             add.add(args[2], ' '.join(args[3:]))
+        
+        elif(args[1] == 'archive'):
+            if args[2] == 'in':
+                archive.move_in((args[3]))
+            if args[2] == 'out':
+                archive.move_out((args[3]))    
 
         elif(args[1] == 'check'):
-            check.check(args[2], ' '.join(args[3:]))
+            if args[3] == 'all':
+                check.check_all(args[2])
+            else:
+                check.check(args[2], ' '.join(args[3:]))
 
         elif(args[1] == 'delete'):
             if len(args) == 3:
@@ -43,6 +52,16 @@ if __name__ == '__main__':
         elif(args[1] == 'list'):
             if len(args) == 2:
                 ls.print_all()
+            elif args[2] == 'archive':
+                ls.print_archive()
+            elif args[2] == 'check':
+                ls.print_all(prop='CHECKED')
+            elif args[2] == 'uncheck':
+                ls.print_all(prop='UNCHECKED')
+            elif args[3] == 'check':
+                ls.print_adventure(args[2], prop='CHECKED')
+            elif args[3] == 'uncheck':
+                ls.print_adventure(args[2], prop='UNCHECKED')
             else:
                 ls.print_adventure(args[2])
 
@@ -58,7 +77,10 @@ if __name__ == '__main__':
             search.search(' '.join(args[2:]))
 
         elif(args[1] == 'uncheck'):
-            uncheck.uncheck(args[2], ' '.join(args[3:]))
+            if args[3] == 'all':
+                uncheck.uncheck_all(args[2])
+            else:
+                uncheck.uncheck(args[2], ' '.join(args[3:]))
 
     except Exception as e:
         hlp.print_help()

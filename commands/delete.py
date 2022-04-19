@@ -35,7 +35,7 @@ class Delete(Command):
     def delete_project(self, project):
         if self.exists_project(project):
             os.remove(data+project+file_ext)
-            theme.print_text("{} was deleted!".format(project), ['GREEN', 'BOLD'])
+            theme.print_text("{} was deleted!".format(project), ['YELLOW', 'BOLD'])
             return 1
         else:
             theme.print_text("The file does not exist", ['WARNING'])

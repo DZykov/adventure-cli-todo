@@ -7,7 +7,7 @@ class Color:
             'CYAN': '\033[96m',
             'DARKCYAN': '\033[36m',
             'BLUE': '\033[94m',
-            'GREEN': '\033[92m',
+            'GREEN': '\033[32;1m',
             'YELLOW': '\033[93m',
             'RED': '\033[91m',
             'BOLD': '\033[1m',
@@ -17,8 +17,8 @@ class Color:
         self.end = '\033[0m'
         self.text = {
             'WARNING': self.colors['RED'] + self.colors['BOLD'],
-            'ADVENTURE': self.colors['PURPLE'] + self.colors['ITALIC'],
-            'MISSION': self.colors['BLUE'],
+            'ADVENTURE': self.colors['PURPLE'] + self.colors['ITALIC'] + self.colors['BOLD'],
+            'MISSION': self.colors['DARKCYAN'] + self.colors['BOLD'],
             'TEXT': "",
         }
         self.check = '✓'

@@ -38,7 +38,7 @@ class Rename(Command):
     def rename_project(self, project, name):
         if self.exists_project(project):
             os.rename(data+project+file_ext, data+name+file_ext)
-            theme.print_text("{} was renamed to {}!".format(project, name), ['GREEN', 'BOLD'])
+            theme.print_text("{} was renamed to {}!".format(project, name), ['YELLOW', 'BOLD'])
             return 1
         else:
             theme.print_text("The file does not exist", ['WARNING'])
